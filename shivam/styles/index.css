@@ -75,7 +75,7 @@ input+img {
     flex-direction: column;
     align-items: center;
     width:18%;
-    border: 3px solid;
+    /* border: 3px solid; */
     height: auto;
     gap:83px;
     background-color: rgb(46, 42, 42);
