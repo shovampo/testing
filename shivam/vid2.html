@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./nav.css" />
+    <style>
+      iframe {
+        margin-left: 400px;
+      }
+      h1 {
+        text-align: center;
+      }
+      button {
+        padding: 20px;
+        margin: 30px;
+      }
+    </style>
+  </head>
+  <body onload="play()">
+    <div id="nav">
+      <div id="doo">
+        <img id="menu" class="dot" src="./img/3.png" alt="" />
+        <img onclick="jai()" id="redirect" src="./img/youtube.png" alt="" />
+      </div>
+      <div id="sear">
+        <input type="text" placeholder="Search here......." id="search" />
+        <img src="./img/search.png" alt="" />
+      </div>
+      <div class="nav-right">
+        <img src="./img/upload.png" alt="" />
+        <img src="./img/more.png" alt="" />
+        <img src="./img/notification.png" alt="" />
+        <img src="./img/my.png" alt="" class="my" />
+      </div>
+    </div>
+    <h1>PLAY VIDEO</h1>
+    <iframe
+      width="700"
+      height="415"
+      title="YouTube video player"
+      id="play_video"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <button onclick="jai2()">BACK TO HOMEPAGE</button>
+  </body>
+</html>
+<script>
+  let play = () => {
+    let video2 = JSON.parse(localStorage.getItem("video2"));
+    console.log(video2);
+    let id = video2.id.videoId;
+    let playvideo = document.getElementById("play_video");
+    playvideo.src = `https://www.youtube.com/embed/${id}`;
+  };
+  let jai = () => {
+    alert("Back to home page");
+    window.location.href = "index.html";
+  };
+  let jai2 = () => {
+    alert("MJE hain tere NO ADS haan");
+    window.location.href = "index.html";
+  };
+</script>

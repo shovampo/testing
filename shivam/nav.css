@@ -1,0 +1,71 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* box-sizing: border-box; */
+}
+
+body {
+    background-color: rgb(34, 31, 31);
+}
+
+#nav {
+    width: 100%;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    background-color: rgb(36, 33, 33);
+    justify-content: space-between;
+    position: fixed;
+}
+
+#doo {
+    display: flex;
+    width: 33%;
+    gap: 30px;
+
+}
+
+#doo>img {
+    width: 150px;
+}
+
+#redirect {
+    background-color: white;
+}
+
+#doo>#menu {
+    width: 30px;
+    padding-left: 20px;
+}
+
+#sear {
+    /* border: 3px solid white; */
+    width: 35%;
+    display: flex;
+}
+
+#sear>input {
+    width: 100%;
+    height: 30px;
+    border-radius: 13px;
+}
+
+input+img {
+    width: 30px;
+    position: absolute;
+    margin-left: 490px;
+}
+
+.nav-right {
+    /* border: 3px solid white; */
+    width: 28%;
+    display: flex;
+    height: 40px;
+    justify-content: flex-end;
+    gap: 50px
+}
+
+.my {
+    border-radius: 19px;
+}
+/* 

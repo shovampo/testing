@@ -1,0 +1,129 @@
+/* //<>>>>>>>>>>>>>>>sIDEBAR>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */ */
+* {
+    margin: 0px;
+    padding: 0px;
+    /* box-sizing: border-box; */
+}
+
+body {
+    background-color: rgb(34, 31, 31);
+}
+
+#nav {
+    width: 100%;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    background-color: rgb(36, 33, 33);
+    justify-content: space-between;
+    position: fixed;
+}
+
+#doo {
+    display: flex;
+    width: 33%;
+    gap: 30px;
+
+}
+
+#doo>img {
+    width: 150px;
+}
+
+#redirect {
+    background-color: white;
+}
+
+#doo>#menu {
+    width: 30px;
+    padding-left: 20px;
+}
+
+#sear {
+    /* border: 3px solid white; */
+    width: 35%;
+    display: flex;
+}
+
+#sear>input {
+    width: 100%;
+    height: 30px;
+    border-radius: 13px;
+}
+
+input+img {
+    width: 30px;
+    position: absolute;
+    margin-left: 490px;
+}
+
+.nav-right {
+    /* border: 3px solid white; */
+    width: 28%;
+    display: flex;
+    height: 40px;
+    justify-content: flex-end;
+    gap: 50px
+}
+
+.my {
+    border-radius: 19px;
+}
+#sidebar{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    width:18%;
+    border: 3px solid;
+    height: auto;
+    gap:83px;
+    background-color: rgb(46, 42, 42);
+    position: fixed;
+    margin-top: 60px;
+}
+#sidebar>div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+padding: 23px 23px 24px 40px;
+font-weight: bolder;
+}
+a:hover{
+    padding-left: 60px;
+}
+
+/* banner..................... */
+#banner{
+    width:83%;
+    margin-left: 17%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#banner>img{
+    width:100%;
+}
+
+/* ??????????????????append data popular????????????????????????????????????????????????????? */
+#result{
+    width: 73%;
+    margin-left: 23%;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:40px;
+}
+#result>div{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+#result>div>img{
+    width: 100%;
+}
+h4{
+    text-align: center;
+    color: white;
+}
